@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * check_for_cycle
+ * check_for_cycle - Check for a cycle in a list
  *
  * @list: pointer to list
  *
