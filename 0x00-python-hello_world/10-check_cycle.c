@@ -8,7 +8,7 @@
  * Return: 0 if founds a cycle, 1 if not
  */
 
-int check_for_cycle(listint_t *list)
+int check_cycle(listint_t *list)
 {
 	listint_t *slow = list;
 	listint_t *fast = list;
