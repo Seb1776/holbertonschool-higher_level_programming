@@ -2,17 +2,12 @@
 
 
 def no_c(my_string):
+    lst = list(my_string)
     i = 0
-    res_text = my_string
 
-    for c in my_string:
-        if c is not None:
-            current_c = ord(c)
+    for c in lst:
+        if c is 'c' or c is 'C':
+            lst[i] = ''
+        i += 1
 
-            if current_c == 67 or current_c == 99:
-                c = ''
-
-            res_text[i] = chr(current_c)
-            i += 1
-    
-    return res_text
+    return "".join(lst)
