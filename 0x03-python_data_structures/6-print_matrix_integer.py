@@ -17,5 +17,5 @@ def print_matrix_integer(matrix=[[]]):
                     print('{}'.format(my), end=' ')
                 else:
                     print('{}'.format(my), end='')
-        
+
         print('')
