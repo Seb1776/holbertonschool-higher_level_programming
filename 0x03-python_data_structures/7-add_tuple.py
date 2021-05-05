@@ -16,5 +16,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
             res_tup = ((0 + tuple_b[0]), (0 + tuple_b[1]))
         elif len_tup_b == 0:
             res_tup = ((tuple_a[0] + 0), (tuple_a[1] + 0))
-    
+
     return res_tup
