@@ -6,7 +6,6 @@ def print_reversed_list_integer(my_list=[]):
 
     if listlen < 0:
         return None
-
     else:
         for i in range(listlen, -1, -1):
             print('{:d}'.format(my_list[i]))
