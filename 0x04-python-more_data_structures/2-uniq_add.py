@@ -7,7 +7,7 @@ def uniq_add(my_list=[]):
 
     [res.append(x) for x in my_list if x not in res]
 
-    for y in range (len(res)): 
+    for y in range(len(res)):
         ress += res[y]
 
     return ress
