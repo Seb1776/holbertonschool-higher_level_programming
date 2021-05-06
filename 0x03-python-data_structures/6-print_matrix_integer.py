@@ -2,20 +2,12 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    i = 0
+    matrix_len = len(matrix)
+    emp = ""
 
-    if matrix is not None:
-        for mx in matrix:
-            if i == 3:
-                print('')
-                i = 0
-
-            for my in mx:
-                i += 1
-
-                if i != 3:
-                    print('{}'.format(my), end=' ')
-                else:
-                    print('{}'.format(my), end='')
-
+    for x in range(matrix_len):
+        emp = ''
+        for y in matrix[x]:
+            print('{}{:d}'.format(emp, y), end='')
+            emp = ' '
         print('')
