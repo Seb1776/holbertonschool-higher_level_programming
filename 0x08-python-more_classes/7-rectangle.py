@@ -7,6 +7,7 @@ class Rectangle:
 
     number_of_instances = 0
     print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         self.__height = height
         self.__width = width
@@ -23,7 +24,7 @@ class Rectangle:
 
         if self.__height < 0:
             raise ValueError('height must be >= 0')
-   
+
     @property
     def height(self):
         return self.__height
@@ -61,7 +62,7 @@ class Rectangle:
             return 0
         else:
             return self.__width * self.__height
-    
+
     def __str__(self):
         contain = ""
         if self.__width is 0 or self.__height is 0:

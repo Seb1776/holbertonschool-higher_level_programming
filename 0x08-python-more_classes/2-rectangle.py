@@ -19,7 +19,7 @@ class Rectangle:
 
         if self.__height < 0:
             raise ValueError('height must be >= 0')
-   
+
     @property
     def height(self):
         return self.__height
