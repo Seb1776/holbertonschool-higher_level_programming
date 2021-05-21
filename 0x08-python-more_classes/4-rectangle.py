@@ -69,6 +69,6 @@ class Rectangle:
                 contain += '\n'
 
             return contain[:-1]
-    
+
     def __repr__(self):
         return ('Rectangle(' + str(self.width) + ', ' + str(self.height) + ')')
