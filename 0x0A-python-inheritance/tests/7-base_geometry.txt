@@ -38,6 +38,9 @@ Import the function:
     Traceback (most recent call last):
     ValueError: age must be greater than 0
 
+	>>> b.integer_validator("age", 1)
+    Traceback (most recent call last):
+
 	>>> b.integer_validator("integer", 1, 2)
 	Traceback (most recent call last):
 	TypeError: integer_validator() takes 3 positional arguments but 4 were given
