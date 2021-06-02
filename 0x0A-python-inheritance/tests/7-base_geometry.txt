@@ -1,11 +1,9 @@
 ==========================
-How To Use BaseGeometry Methods
+How use 7-base_geometry function
 ==========================
 
-=====
 Usage
-=====
-
+-----
 Import the function:
 
 	>>> base_geo = __import__('7-base_geometry').BaseGeometry
@@ -15,66 +13,74 @@ Import the function:
 	Traceback (most recent call last):
 	Exception: area() is not implemented
 
-	>>> b.area(5)
+	>>> b.area(3)
 	Traceback (most recent call last):
 	TypeError: area() takes 1 positional argument but 2 were given
 
-	>>> b.integer_validator("stringer")
+	>>> b.integer_validator("integer")
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
-	>>> bx.integer_validator("stringer", None)
+	>>> bg.integer_validator("test", None)
 	Traceback (most recent call last):
-	NameError: name 'bx' is not defined
+	NameError: name 'bg' is not defined
 
-	>>> b.integer_validator("stringer", None)
+	>>> b.integer_validator("test", None)
 	Traceback (most recent call last):
-	TypeError: stringer must be an integer
+	TypeError: test must be an integer
 
 	>>> b.integer_validator()
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-	>>> b.integer_validator("stringer", 5, 6)
+	>>> b.integer_validator("integer")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+	>>> b.integer_validator("integer", 1, 2)
 	Traceback (most recent call last):
 	TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
-	>>> b.integer_validator("lister", [4, 8, 4])
+	>>> b.integer_validator("list", [1, 2, 3])
 	Traceback (most recent call last):
-	TypeError: lister must be an integer
+	TypeError: list must be an integer
 
-	>>> b.integer_validator("booler", True)
+	>>> b.integer_validator("bool", True)
 	Traceback (most recent call last):
-	TypeError: booler must be an integer
+	TypeError: bool must be an integer
 
-	>>> b.integer_validator("tupler", (8, 7, 9))
+	>>> b.integer_validator("tuple", (1, 2, 3))
 	Traceback (most recent call last):
-	TypeError: tupler must be an integer
+	TypeError: tuple must be an integer
 
-	>>> b.integer_validator("stringer", False)
+	>>> b.integer_validator("Hi", False)
 	Traceback (most recent call last):
-	TypeError: stringer must be an integer
+	TypeError: Hi must be an integer
 
-	>>> b.integer_validator("integerer", "568")
+	>>> b.integer_validator("my_int", "123")
 	Traceback (most recent call last):
-	TypeError: integerer must be an integer
+	TypeError: my_int must be an integer
 
-	>>> b.integer_validator(None, "noner")
+	>>> b.integer_validator(None, "Hi")
 	Traceback (most recent call last):
 	TypeError: None must be an integer
 
-	>>> b.integer_validator("stringer", "messager")
+	>>> b.integer_validator("string", "payday")
 	Traceback (most recent call last):
-	TypeError: stringer must be an integer
+	TypeError: string must be an integer
 
-	>>> b.integer_validator("seter", {"payday", "thesecond"})
+	>>> b.integer_validator("set", {"payday", "thesecond"})
 	Traceback (most recent call last):
-	TypeError: seter must be an integer
+	TypeError: set must be an integer
 
-	>>> b.integer_validator("cytes", c"cytes")
+	>>> b.integer_validator("bytes", b"bytes")
 	Traceback (most recent call last):
-	TypeError: cytes must be an integer
+	TypeError: bytes must be an integer
 
-	>>> b.integer_validator("complexer", complex(5, 7))
+	>>> b.integer_validator()
 	Traceback (most recent call last):
-	TypeError: complexer must be an integer
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+	>>> b.integer_validator("complex", complex(1, 2))
+	Traceback (most recent call last):
+	TypeError: complex must be an integer
