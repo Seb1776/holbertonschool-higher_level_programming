@@ -82,10 +82,6 @@ Import the function:
 	Traceback (most recent call last):
 	TypeError: set must be an integer
 
-	>>> b.integer_validator("bytes", b"bytes")
-	Traceback (most recent call last):
-	TypeError: bytes must be an integer
-
 	>>> b.integer_validator()
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
