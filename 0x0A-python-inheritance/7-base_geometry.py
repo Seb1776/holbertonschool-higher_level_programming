@@ -3,29 +3,17 @@
 
 
 class BaseGeometry:
-    '''
-    Gemoetry Class
-
-    Methods:
-
-    area() -- Empty for now
-
-    integer_validator(self, name, value) -- Validates a given integer
-        with a given string [name]
-
-        Args => self: Itself
-                name: Name of the value
-                value: Value of the data
-    '''
+    '''BaseGeometry Class'''
 
     def area(self):
-        '''Empty area method'''
+        '''Empty Area Class'''
+
         raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
-        '''Validates an integer with a given name'''
+        '''This method validates a given integer with a name'''
 
         if type(value) != int:
-            raise TypeError('{} must be integer'.format(name))
+            raise TypeError('{} must be an integer'.format(name))
         if value <= 0:
             raise ValueError('{} must be greater than 0'.format(name))
