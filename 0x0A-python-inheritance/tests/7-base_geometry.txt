@@ -13,18 +13,6 @@ Import the function:
 	Traceback (most recent call last):
 	Exception: area() is not implemented
 
-	>>> b.area(3)
-	Traceback (most recent call last):
-	TypeError: area() takes 1 positional argument but 2 were given
-
-    Instance is of type ``BaseGeometry``.
-    >>> type(b) == BaseGeometry
-    True
-
-    Instance is an instance of ``BaseGeometry``
-    >>> isinstance(b, BaseGeometry)
-    True
-
 	>>> b.integer_validator("integer")
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 1 required positional argument: 'value'
