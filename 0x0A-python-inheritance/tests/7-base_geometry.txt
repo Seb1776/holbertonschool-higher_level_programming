@@ -1,22 +1,87 @@
->>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+==========================
+How use 7-base_geometry function
+==========================
 
->>> b = BaseGeometry()
+Usage
+-----
+Import the function:
 
->>> b.integer_validator("int", 2)
->>> b.integer_validator("payday", 2)
+	>>> base_geo = __import__('7-base_geometry').BaseGeometry
 
->>> b.integer_validator("Dallas", "Mask")
-Traceback (most recent call last):
-TypeError: Dallas must be an integer
+	>>> b = base_geo()
 
->>> b.integer_validator("build", 0)
-Traceback (most recent call last):
-ValueError: build must be greater than 0
+	>>> b.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
 
->>> b.integer_validator("stoic", -4)
-Traceback (most recent call last):
-ValueError: stoic must be greater than 0
+	>>> b.integer_validator("integer")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
->>> b.integer_validator("anarchist", "overpowered")
-Traceback (most recent call last):
-TypeError: anarchist must be an integer
+    >>> b.integer_validator(,1)
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
+
+	>>> bg.integer_validator("test", None)
+	Traceback (most recent call last):
+	NameError: name 'bg' is not defined
+
+	>>> b.integer_validator("test", None)
+	Traceback (most recent call last):
+	TypeError: test must be an integer
+
+    >>> b.integer_validator("length", -6)
+    Traceback (most recent call last):
+    ValueError: length must be greater than 0
+
+    >>> b.integer_validator("length", 0)
+    Traceback (most recent call last):
+    ValueError: length must be greater than 0
+
+	>>> b.integer_validator("integer", 1, 2)
+	Traceback (most recent call last):
+	TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+	>>> b.integer_validator("list", [1, 2, 3])
+	Traceback (most recent call last):
+	TypeError: list must be an integer
+
+	>>> b.integer_validator("bool", True)
+	Traceback (most recent call last):
+	TypeError: bool must be an integer
+
+	>>> b.integer_validator("tuple", (1, 2, 3))
+	Traceback (most recent call last):
+	TypeError: tuple must be an integer
+
+	>>> b.integer_validator("Hi", False)
+	Traceback (most recent call last):
+	TypeError: Hi must be an integer
+
+	>>> b.integer_validator("my_int", "123")
+	Traceback (most recent call last):
+	TypeError: my_int must be an integer
+
+    >>> b.integer_validator("floaty", 12.23)
+    Traceback (most recent call last):
+    TypeError: floaty must be an integer
+
+	>>> b.integer_validator(None, "Hi")
+	Traceback (most recent call last):
+	TypeError: None must be an integer
+
+	>>> b.integer_validator("string", "payday")
+	Traceback (most recent call last):
+	TypeError: string must be an integer
+
+	>>> b.integer_validator("set", {"payday", "thesecond"})
+	Traceback (most recent call last):
+	TypeError: set must be an integer
+
+	>>> b.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+	>>> b.integer_validator("complex", complex(1, 1))
+	Traceback (most recent call last):
+	TypeError: complex must be an integer
