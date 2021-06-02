@@ -11,6 +11,6 @@ class BaseGeometry:
     area() -- Empty for now
     '''
 
-    def area():
+    def area(self):
         '''Empty area method'''
         raise Exception('area() is not implemented')
