@@ -30,13 +30,13 @@ Import the function:
 	Traceback (most recent call last):
 	TypeError: test must be an integer
 
-    >>> b.integer_validator("length", -6)
+    >>> b.integer_validator("age", -6)
     Traceback (most recent call last):
     ValueError: length must be greater than 0
 
-    >>> b.integer_validator("length", 0)
+    >>> b.integer_validator("age", 0)
     Traceback (most recent call last):
-    ValueError: length must be greater than 0
+    ValueError: age must be greater than 0
 
 	>>> b.integer_validator("integer", 1, 2)
 	Traceback (most recent call last):
