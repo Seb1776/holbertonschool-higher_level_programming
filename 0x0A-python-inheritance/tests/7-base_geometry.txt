@@ -1,0 +1,80 @@
+==========================
+How To Use BaseGeometry Methods
+==========================
+
+=====
+Usage
+=====
+
+Import the function:
+
+	>>> base_geo = __import__('7-base_geometry').BaseGeometry
+
+	>>> b = base_geo()
+	>>> b.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+	>>> b.area(5)
+	Traceback (most recent call last):
+	TypeError: area() takes 1 positional argument but 2 were given
+
+	>>> b.integer_validator("stringer")
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+	>>> bx.integer_validator("stringer", None)
+	Traceback (most recent call last):
+	NameError: name 'bx' is not defined
+
+	>>> b.integer_validator("stringer", None)
+	Traceback (most recent call last):
+	TypeError: stringer must be an integer
+
+	>>> b.integer_validator()
+	Traceback (most recent call last):
+	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+	>>> b.integer_validator("stringer", 5, 6)
+	Traceback (most recent call last):
+	TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+	>>> b.integer_validator("lister", [4, 8, 4])
+	Traceback (most recent call last):
+	TypeError: lister must be an integer
+
+	>>> b.integer_validator("booler", True)
+	Traceback (most recent call last):
+	TypeError: booler must be an integer
+
+	>>> b.integer_validator("tupler", (8, 7, 9))
+	Traceback (most recent call last):
+	TypeError: tupler must be an integer
+
+	>>> b.integer_validator("stringer", False)
+	Traceback (most recent call last):
+	TypeError: stringer must be an integer
+
+	>>> b.integer_validator("integerer", "568")
+	Traceback (most recent call last):
+	TypeError: integerer must be an integer
+
+	>>> b.integer_validator(None, "noner")
+	Traceback (most recent call last):
+	TypeError: None must be an integer
+
+	>>> b.integer_validator("stringer", "messager")
+	Traceback (most recent call last):
+	TypeError: stringer must be an integer
+
+	>>> b.integer_validator("seter", {"payday", "thesecond"})
+	Traceback (most recent call last):
+	TypeError: seter must be an integer
+
+	>>> b.integer_validator("cytes", c"cytes")
+	Traceback (most recent call last):
+	TypeError: cytes must be an integer
+
+	>>> b.integer_validator("complexer", complex(5, 7))
+	Traceback (most recent call last):
+	TypeError: complexer must be an integer
