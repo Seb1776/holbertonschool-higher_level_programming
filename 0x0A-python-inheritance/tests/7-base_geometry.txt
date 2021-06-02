@@ -39,7 +39,6 @@ Import the function:
     ValueError: age must be greater than 0
 
 	>>> b.integer_validator("age", 1)
-    Traceback (most recent call last):
 
 	>>> b.integer_validator("integer", 1, 2)
 	Traceback (most recent call last):
