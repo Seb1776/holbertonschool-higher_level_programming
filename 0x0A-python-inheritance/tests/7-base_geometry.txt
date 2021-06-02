@@ -32,7 +32,7 @@ Import the function:
 
     >>> b.integer_validator("age", -6)
     Traceback (most recent call last):
-    ValueError: length must be greater than 0
+    ValueError: age must be greater than 0
 
     >>> b.integer_validator("age", 0)
     Traceback (most recent call last):
