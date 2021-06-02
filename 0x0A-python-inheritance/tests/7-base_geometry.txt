@@ -33,10 +33,6 @@ Import the function:
 	Traceback (most recent call last):
 	TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
-	>>> b.integer_validator("integer")
-	Traceback (most recent call last):
-	TypeError: integer_validator() missing 1 required positional argument: 'value'
-
     >>> b.integer_validator("length", -6)
     Traceback (most recent call last):
     ValueError: length must be greater than 0
