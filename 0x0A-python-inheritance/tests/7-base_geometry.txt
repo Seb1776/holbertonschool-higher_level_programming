@@ -69,6 +69,10 @@ Import the function:
 	Traceback (most recent call last):
 	TypeError: my_int must be an integer
 
+    >>> geom.integer_validator("floaty", 12.23)
+    Traceback (most recent call last):
+    TypeError: floaty must be an integer
+
 	>>> b.integer_validator(None, "Hi")
 	Traceback (most recent call last):
 	TypeError: None must be an integer
