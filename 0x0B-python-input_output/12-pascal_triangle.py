@@ -1,7 +1,13 @@
 #!/usr/bin/python3
+'''Pascal Triangle'''
 
 
 def pascal_triangle(n):
+    '''
+    This function prints a pascal triangle
+    n -- Height of the triangle
+    '''
+
     triangle = []
     row = []
     prev_row = []
