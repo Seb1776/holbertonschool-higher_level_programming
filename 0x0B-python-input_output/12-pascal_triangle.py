@@ -6,6 +6,9 @@ def pascal_triangle(n):
     row = []
     prev_row = []
 
+    if n <= 0:
+        return triangle
+
     for i in range(0, n + 1):
 
         row = [j > 0 and j < i -
