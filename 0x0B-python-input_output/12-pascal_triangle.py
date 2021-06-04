@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 
-def pascal_triangle(height):
+def pascal_triangle(n):
     triangle = []
     row = []
     prev_row = []
 
-    for i in range(0, height + 1):
+    for i in range(0, n + 1):
 
         row = [j > 0 and j < i -
                1 and i > 2 and prev_row[j-1] +
