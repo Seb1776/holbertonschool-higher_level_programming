@@ -9,7 +9,7 @@ if __name__ == "__main__":
     """JSON API"""
 
     url = "http://0.0.0.0:5000/search_user"
-    
+
     if len(argv) > 1:
         data = {"q": argv[1]}
     
