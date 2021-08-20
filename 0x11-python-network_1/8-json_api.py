@@ -12,10 +12,10 @@ if __name__ == "__main__":
 
     if len(argv) > 1:
         data = {"q": argv[1]}
-    
+
     else:
         data = {"q": ""}
-    
+
     req = requests.post(url, data=data)
 
     try:
@@ -25,5 +25,6 @@ if __name__ == "__main__":
             print("[{}] {}".format(json_response['id'], json_response['name']))
         else:
             print("No result")
+
     except ValueError:
         print("Not a valid JSON")
