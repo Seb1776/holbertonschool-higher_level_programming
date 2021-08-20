@@ -9,7 +9,7 @@ if __name__ == "__main__":
     """Post Email"""
 
     url = argv[1]
-    mail = {"email", argv[2]}
+    mail = {"email": argv[2]}
 
     req = requests.post(url, mail)
     print(req.text)
