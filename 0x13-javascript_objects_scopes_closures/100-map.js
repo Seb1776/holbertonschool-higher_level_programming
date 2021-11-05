@@ -1,6 +1,10 @@
 #!/usr/bin/node
-const array = require('./100-data.js');
-const map1 = array.list.map((a, b) => a * b);
+/*
+  Script that prints a new list with each value from another list multiplied by
+  its index.
+*/
+const list = require('./100-data').list;
+const newList = list.map((val, idx) => val * idx);
 
-console.log(array.list);
-console.log(map1);
+console.log(list);
+console.log(newList);
