@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from calcutator_1 import add, sub, mul, div
+    from calculator_1 import add, sub, mul, div
     from sys import argv
 
     arglen = len(argv) - 1
